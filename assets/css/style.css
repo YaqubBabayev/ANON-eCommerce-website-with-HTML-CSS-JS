@@ -1816,3 +1816,88 @@ footer {
 
   .banner-btn { padding: 7px 20px; }
 
+
+
+    /**
+   * #PRODUCT 
+   */
+
+   .product-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+
+
+  /**
+   * #CTA
+   */
+
+  .cta-content { padding: 40px; }
+
+  .cta-content .discount {
+    --fs-11: 0.875rem;
+    padding: 5px 10px;
+  }
+
+  .cta-title { --fs-5: 1.5rem; }
+
+  .cta-text { --fs-7: 1rem; }
+
+  .cta-btn { --fs-9: 1rem; }
+
+
+
+  /**
+   * #FOOTER
+   */
+
+  .copyright { --fs-8: 0.875rem; }
+
+}
+
+
+
+
+
+/**
+ * responsive larger than 570px screen
+ */
+
+@media (min-width: 570px) {
+
+  /**
+   * #HEADER
+   */
+
+  .header-top .container,
+  .header-main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-logo { margin-bottom: 0; }
+
+  .header-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-top-actions select {
+    border: none;
+    display: block;
+    min-width: 80px;
+    padding: 5px 0;
+    font: inherit;
+    color: var(--sonic-silver);
+    font-size: var(--fs-8);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition-timing);
+  }
+
+  .header-top-actions select:hover { color: var(--eerie-black); }
+
+  .header-search-container { min-width: 300px; }
